@@ -1,12 +1,14 @@
 import React from 'react';
 import Tasks from "./Tasks";
+import {propsType} from "../App";
 
 // Hi Guys!
 // Let's reinforce our current session!
 // -You have 2 arrays. You should create a new component TASKS, where you will render these arrays.
 // -Don't forget to assign types to our data.
 
-const Ps1 = () => {
+
+const Ps1 = (props: propsType) => {
     const data1 = {
         title: "What to do",
         tasks: [
@@ -123,7 +125,7 @@ const Ps1 = () => {
 
     return (
         <div>
-            <h2>Task 1. Render tasks list</h2>
+            <h2>{props.title}</h2>
             <Tasks title={data1.title} tasks={data1.tasks} students={data1.students}/>
             <Tasks title={data2.title} tasks={data2.tasks} students={data2.students}/>
         </div>

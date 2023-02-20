@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Todolist} from './Todolist';
+import {propsType} from "../App";
 
 export type FilterValuesType = "all" | "active" | "completed" | "three";
 
@@ -24,7 +25,7 @@ export type FilterValuesType = "all" | "active" | "completed" | "three";
 //     setFilter(value);
 // }
 
-const Ps2 = () => {
+const Ps2 = (props: propsType) => {
 
     let [tasks, setTasks] = useState([
         {id: 1, title: "HTML&CSS", isDone: true},
@@ -45,7 +46,7 @@ const Ps2 = () => {
 
     return (
         <div>
-            <h2>Task 2. Create filter button</h2>
+            <h2>{props.title}</h2>
 
             <Todolist title="What to learn"
                       tasks={tasks}

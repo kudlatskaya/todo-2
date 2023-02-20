@@ -13,7 +13,7 @@ function App() {
     const taskTitles = [
         "Task 1. Render tasks list",
         "Task 2. Create filter button",
-        "Task 3. Create filter button",
+        "Task 3. Use useRef and animation",
     ]
 
     return (

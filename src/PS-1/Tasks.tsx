@@ -37,11 +37,11 @@ const Tasks = (props: TasksPropsType) => {
         : <span>Your students list is empty!</span>
 
     return (
-        <div>
+        <>
             <p>{title}</p>
             <ol>{tasksList}</ol>
             <ul>{studentsList}</ul>
-        </div>
+        </>
     );
 };
 
